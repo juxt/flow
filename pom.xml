@@ -10,6 +10,7 @@
       <groupId>org.clojure</groupId>
       <artifactId>clojure</artifactId>
       <version>1.10.1</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>
