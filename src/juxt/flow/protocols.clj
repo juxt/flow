@@ -1,4 +1,6 @@
-(ns org.reactivestreams.flow)
+;; Copyright © 2020, JUXT LTD.
+
+(ns juxt.flow.protocols)
 
 ;; Modelled on interfaces enclosed by JDK 9's java.util.concurrent.Flow class
 
