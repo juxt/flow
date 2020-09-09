@@ -9,6 +9,18 @@ data streams with back-pressure, and interoperate with other libraries that
 support the Reactive Streams standard, such as
 https://github.com/ReactiveX/RxJava[RxJava].
 
+== Why not just use Reactive Streams JVM interfaces?
+
+The JVM interfaces created by Reactive Streams (Processor, Publisher,
+Subscriber, Subscription) are published in the `org.reactivestreams`
+http://www.reactive-streams.org/reactive-streams-1.0.3-javadoc/org/reactivestreams/package-summary.html[package]
+and in the Java 9 JDK itself, wrapped in the `java.util.concurrent.Flow` class.
+
+Eventually, all compatible JVM libraries are expected to upgrade to the JDK 9
+interfaces. However, while Java 8 is still in use, Clojure protocols can be used
+to adapt between these Java interfaces and the various library classes that
+implement them, allowing a mix of 'old' and 'new' implementations.
+
 == Status
 
 Flow is ALPHA status, meaning that changes are expected.
